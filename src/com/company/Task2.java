@@ -80,30 +80,30 @@ public class Task2 {
 
     }
     // Задача 7. Резисторы
-    static void Exercise07() {
+    static void exercise07() {
 
     }
     // Задача 8. Площадь круга
-    static void Exercise08() {
+    static void exercise08() {
 
     }
 
     // Дополнительные задачи:
 
     // Задача 1. Секунды в часы и минуты
-    static void Exercise001() {
+    static void exercise001() {
 
     }
     // Задача 2. Поклейка комнаты
-    static void Exercise002() {
+    static void exercise002() {
 
     }
     // Задача 3. Время
-    static void Exercise003() {
+    static void exercise003() {
 
     }
     // Задача 4. Счастливое число
-    static void Exercise004() {
+    static void exercise004() {
 
     }
     public static void main(String[] args) {
