@@ -2,11 +2,11 @@ package com.company;
 
 import java.util.Scanner;
 
-public class TASK2 {
+public class Task2 {
     // Обязательные задачи:
 
     // Задача 1. Среднее арифметическое
-    static void Exercise01() {
+    static void exercise01() {
         System.out.println("Добрый день!");
         System.out.println("Наш калькулятор посчитает среднее арифметическое введенных Вами чисел:");
 
@@ -26,11 +26,11 @@ public class TASK2 {
         System.out.println("Среднее арифметическое введенных Вами чисел:" + " " + result);
     }
     // Задача 2. Перевод температуры
-    static void Exercise02() {
+    static void exercise02() {
 
     }
     // Задача 3. Площадь и периметр
-    static void Exercise03() {
+    static void exercise03() {
         System.out.println("Добрый день!");
         System.out.println("Давайте произведем расчет площади и периметра прямоугольника:");
 
@@ -48,7 +48,7 @@ public class TASK2 {
 
     }
     // Задача 4. Объем цилиндра
-    static void Exercise04() {
+    static void exercise04() {
         System.out.println("Добрый день!");
         System.out.println("Давайте произведем расчет объема цилиндра:");
 
@@ -67,7 +67,7 @@ public class TASK2 {
         System.out.println("Объем цилиндра по заданным параметрам:" + " " + volume + " " + "см3");
     }
     // Задача 5. Плотность вещества
-    static void Exercise05() {
+    static void exercise05() {
         System.out.println("Добрый день!");
         System.out.println("Давайте произведем расчет плотности вещества:");
 
@@ -107,6 +107,6 @@ public class TASK2 {
 
     }
     public static void main(String[] args) {
-        Exercise04();
+        exercise04();
     }
 }
