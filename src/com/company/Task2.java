@@ -76,7 +76,7 @@ public class Task2 {
         System.out.println("Введите пожалуйста объем тела:");
     }
     // Задача 6. Плотность населения
-    static void Exercise06() {
+    static void exercise06() {
 
     }
     // Задача 7. Резисторы
