@@ -27,7 +27,17 @@ public class Task2 {
     }
     // Задача 2. Перевод температуры
     static void exercise02() {
+        System.out.println("Добрый день!");
+        System.out.println("Наш калькулятор переведет температуру из градусов Цельсия (°C) в градусы Фаренгейта (°F):");
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите температуру в градусах Цельсия (°C):");
+        double degreesCelsius = sc.nextDouble();
+
+        double degreesFahrenheit = (degreesCelsius * 9 / 5) + 32;
+
+        System.out.println("Температура в " + degreesCelsius + " " + "(°C) = " + degreesFahrenheit + " " + "(°F)");
     }
     // Задача 3. Площадь и периметр
     static void exercise03() {
@@ -45,7 +55,6 @@ public class Task2 {
 
         System.out.println("Площадь прямоугольника:" + " " + square + " " + "см2");
         System.out.println("Периметр прямоугольника:" + " " + perimeter + " " + "см");
-
     }
     // Задача 4. Объем цилиндра
     static void exercise04() {
@@ -69,23 +78,70 @@ public class Task2 {
     // Задача 5. Плотность вещества
     static void exercise05() {
         System.out.println("Добрый день!");
-        System.out.println("Давайте произведем расчет плотности вещества:");
+        System.out.println("Давайте произведем расчет плотности материала тела:");
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Введите пожалуйста объем тела:");
+        System.out.println("Введите пожалуйста объем тела (м3):");
+        double volume = sc.nextDouble();
+
+        System.out.println("Введите пожалуйста массу тела (кг):");
+        double  weight = sc.nextDouble();
+
+        double density = weight / volume;
+
+        System.out.println("Плотность материала тела равна: " + density + " " + "кг/м3");
     }
     // Задача 6. Плотность населения
     static void exercise06() {
+        System.out.println("Добрый день!");
+        System.out.println("Наш калькулятор поможет произвести расчет плотности населения государства:");
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите пожалуйста площадь государства (км2):");
+        double stateArea = sc.nextDouble();
+
+        System.out.println("Введите пожалуйста численность населения в государстве:");
+        double  population = sc.nextDouble();
+
+        double areainSquareMeters = stateArea * 1000000;
+
+        double populationDensity = population / areainSquareMeters;
+
+        System.out.println("Плотность населения государства = " + populationDensity + " " + "чел/м2");
     }
     // Задача 7. Резисторы
     static void exercise07() {
+        System.out.println("Добрый день!");
+        System.out.println("Наш калькулятор поможет Вам вычислить значения сопротивления RO:");
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите пожалуйста показатели сопротивления R1, R2, R3:");
+        double R1 = sc.nextDouble();
+        double R2 = sc.nextDouble();
+        double R3 = sc.nextDouble();
+
+        double RO = 1 / (1/R1 + 1/R2 + 1/R3);
+
+        System.out.println("Значение сотпротивления RO: " + RO);
     }
     // Задача 8. Площадь круга
     static void exercise08() {
+        System.out.println("Добрый день!");
+        System.out.println("Давайте произведем расчет площади круга:");
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите пожалуйста динну окружности (в см):");
+        double circuit = sc.nextDouble();
+
+        double PI = 3.14;
+        double radius = circuit / (2 * PI);
+        double squareCircle = PI * (radius * radius);
+
+        System.out.println("Площадь круга равна:" + squareCircle + " " + "см2");
     }
 
     // Дополнительные задачи:
@@ -107,6 +163,6 @@ public class Task2 {
 
     }
     public static void main(String[] args) {
-        exercise04();
+        exercise06();
     }
 }
