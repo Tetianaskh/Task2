@@ -105,9 +105,9 @@ public class Task2 {
         System.out.println("Введите пожалуйста численность населения в государстве:");
         double  population = sc.nextDouble();
 
-        double areainSquareMeters = stateArea * 1000000;
+        double areaSquareMeters = stateArea * 1000000;
 
-        double populationDensity = population / areainSquareMeters;
+        double populationDensity = population / areaSquareMeters;
 
         System.out.println("Плотность населения государства = " + populationDensity + " " + "чел/м2");
     }
@@ -152,7 +152,40 @@ public class Task2 {
     }
     // Задача 2. Поклейка комнаты
     static void exercise002() {
+        System.out.println("Добрый день!");
+        System.out.println("Наш калькулятор поможет Вам расчитать необходимое количество рулонов обоев для поклейки комнаты:");
 
+        Scanner sc = new Scanner(System.in);
+
+        // ширина и длина рулона обоев в метрах:
+        double widthRool = 0.5;
+        double lengthRool = 10;
+
+        System.out.println("Введите пожалуйста высоту, ширину и длину комнаты (в метрах):");
+        double heightRoom = sc.nextDouble();
+        double widthRoom = sc.nextDouble();
+        double lengthRoom = sc.nextDouble();
+
+        System.out.println("Введите пожалуйста количество окон в комнате:");
+        double numberWindows = sc.nextDouble();
+
+        System.out.println("Введите пожалуйста высоту и ширину окна (в метрах):");
+        double heightWindows = sc.nextDouble();
+        double widthWindows = sc.nextDouble();
+
+        System.out.println("Введите пожалуйста высоту и ширину двери (а метрах):");
+        double heightDoor = sc.nextDouble();
+        double widthDoor = sc.nextDouble();
+
+        double squareWindow = ( heightWindows * widthWindows ) * 2;
+        double squareDoor = heightDoor * widthDoor;
+        double squareRool = widthRool * lengthRool;
+
+        double squareGluing = ((heightRoom * lengthRoom) * 2) + ((heightRoom * widthRoom) * 2) - squareWindow - squareDoor;
+
+        double amountRool = squareGluing / squareRool;
+
+        System.out.println("Необходимое количество рулонов обоев для поклейки комнаты:" + amountRool);
     }
     // Задача 3. Время
     static void exercise003() {
@@ -163,6 +196,6 @@ public class Task2 {
 
     }
     public static void main(String[] args) {
-        exercise06();
+        exercise002();
     }
 }
